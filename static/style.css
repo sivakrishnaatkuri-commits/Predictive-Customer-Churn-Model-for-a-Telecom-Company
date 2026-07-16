@@ -1,0 +1,50 @@
+:root {
+  --primary: #0f4c81;
+  --accent: #00b7ff;
+  --dark: #071b2f;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #071b2f, #12395d);
+  color: #f6f9fc;
+}
+.navbar {
+  background: rgba(7, 27, 47, 0.95);
+  backdrop-filter: blur(8px);
+}
+.hero-section {
+  background: linear-gradient(120deg, rgba(15, 76, 129, 0.95), rgba(0, 183, 255, 0.8)), url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80') center/cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+.hero-card, .info-card, .glass-card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(10px);
+}
+.info-card, .glass-card {
+  padding: 1.2rem;
+}
+.btn-primary {
+  background: linear-gradient(90deg, var(--accent), var(--primary));
+  border: none;
+}
+.btn-outline-light:hover {
+  background: white;
+  color: var(--primary);
+}
+.meter {
+  width: 100%;
+  height: 16px;
+  border-radius: 999px;
+  background: #dfe7f0;
+  overflow: hidden;
+}
+.meter-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00b7ff, #0f4c81);
+}
+img { width: 100%; border-radius: 16px; }
